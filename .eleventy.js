@@ -1,10 +1,14 @@
-module.exports = function(eleventyConfig){
+module.exports = function(eleventyConfig) {
+    // Passthrough para copiar archivos estáticos
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
-    return{
+
+    // Configuración de entrada, salida y pathPrefix
+    return {
         dir: {
-            input:"src",
-            output:"docs"
-        }
-    }
-}
+            input: "src",       // Carpeta de entrada
+            output: "docs"      // Carpeta de salida
+        },
+        pathPrefix: "/mathapp-eleventy/" // Cambia esto por el nombre real del repositorio
+    };
+};
