@@ -9,6 +9,6 @@ module.exports = function(eleventyConfig) {
             input: "src",       // Carpeta de entrada
             output: "docs"      // Carpeta de salida
         },
-        pathPrefix: "/mathapp-eleventy/" // Cambia esto por el nombre real del repositorio
+        pathPrefix: "/mathapp-eleventy/"
     };
 };
