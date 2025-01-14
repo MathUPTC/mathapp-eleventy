@@ -1,0 +1,90 @@
+[
+  {
+    "id": "fundamentos-de-programacion",
+    "titulo": "Fundamentos de Programación",
+    "descripcion": "Aprende los conceptos básicos de programación utilizando Python.",
+    "tareas": [
+      "Instalar Python y configurar el entorno",
+      "Entender variables, tipos de datos y estructuras básicas",
+      "Escribir funciones simples",
+      "Usar condicionales y bucles"
+    ]
+  },
+  {
+    "id": "entornos-virtuales",
+    "titulo": "Entornos Virtuales",
+    "descripcion": "Aprende a crear y gestionar entornos virtuales para proyectos en Python.",
+    "tareas": [
+      "Instalar Anaconda o Virtualenv",
+      "Crear un entorno virtual",
+      "Activar y desactivar el entorno virtual",
+      "Instalar y gestionar paquetes dentro del entorno"
+    ]
+  },
+  {
+    "id": "control-de-versiones",
+    "titulo": "Control de Versiones con Git y GitHub",
+    "descripcion": "Domina el uso de Git y GitHub para gestionar proyectos y colaborar.",
+    "tareas": [
+      "Instalar Git y configurar el entorno",
+      "Crear un repositorio en GitHub",
+      "Aprender los comandos básicos de Git (commit, push, pull)",
+      "Gestionar ramas en Git y fusionarlas"
+    ]
+  },
+  {
+    "id": "fundamentos-matematicos",
+    "titulo": "Fundamentos Matemáticos para Ciencia de Datos",
+    "descripcion": "Refuerza tus conocimientos matemáticos clave para la ciencia de datos.",
+    "tareas": [
+      "Repasar álgebra lineal (vectores, matrices)",
+      "Estudiar probabilidad y estadísticas básicas",
+      "Familiarizarte con la teoría de funciones y series",
+      "Entender los fundamentos de cálculo"
+    ]
+  },
+  {
+    "id": "introduccion-al-analisis-de-datos",
+    "titulo": "Introducción al Análisis de Datos",
+    "descripcion": "Aprende a explorar y analizar datos con herramientas como Pandas.",
+    "tareas": [
+      "Cargar y limpiar conjuntos de datos",
+      "Realizar análisis descriptivo (promedios, medianas, desviaciones)",
+      "Trabajar con series temporales",
+      "Visualizar datos con bibliotecas como Matplotlib"
+    ]
+  },
+  {
+    "id": "sql-y-bases-de-datos",
+    "titulo": "SQL y Bases de Datos",
+    "descripcion": "Aprende a interactuar con bases de datos usando SQL.",
+    "tareas": [
+      "Aprender comandos básicos de SQL (SELECT, INSERT, UPDATE, DELETE)",
+      "Diseñar una base de datos relacional",
+      "Realizar consultas avanzadas (JOINs, subconsultas)",
+      "Optimizar consultas SQL"
+    ]
+  },
+  {
+    "id": "fundamentos-de-machine-learning",
+    "titulo": "Fundamentos de Machine Learning",
+    "descripcion": "Introduce los conceptos clave del aprendizaje automático y sus aplicaciones.",
+    "tareas": [
+      "Estudiar los tipos de aprendizaje (supervisado, no supervisado)",
+      "Implementar un modelo básico de regresión lineal",
+      "Aprender sobre overfitting y underfitting",
+      "Evaluar modelos de Machine Learning"
+    ]
+  },
+  {
+    "id": "aspectos-criticos-y-eticos",
+    "titulo": "Aspectos Críticos y Éticos en Ciencia de Datos",
+    "descripcion": "Comprende las implicaciones éticas y sociales de los modelos de datos.",
+    "tareas": [
+      "Estudiar el sesgo en los datos y en los modelos",
+      "Comprender la privacidad y protección de datos",
+      "Discutir la responsabilidad ética de los científicos de datos",
+      "Evaluar el impacto social de las decisiones basadas en datos"
+    ]
+  }
+]
