@@ -349,3 +349,85 @@ html {
 .btn-participar:hover {
     background-color: #16a085;
 }
+
+
+
+.ruta-flujo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .paso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 250px;
+    height: 300px; /* Altura fija para mantener las tarjetas del mismo tamaño */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya de manera uniforme */
+  }
+  
+  .circulo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .flecha {
+    font-size: 2rem;
+    color: #007bff;
+    margin-top: 15px;
+  }
+  
+  .flecha:last-child {
+    display: none; /* Ocultar la última flecha */
+  }
+  
+  .card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para mantener el contenido de la tarjeta distribuido uniformemente */
+  }
+  
+  .card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .ruta-flujo {
+      flex-direction: column;
+    }
+    .flecha {
+      margin: 10px 0;
+    }
+  }
+  
+  
