@@ -1,18 +1,26 @@
 ---
 layout: layouts/layout-pages.njk
-title: Tareas - {{ tarea.titulo }}
+title: Tareas
 ---
 
 <div class="task-container">
-  <h1>{{ tarea.titulo }}</h1>
-  <p>{{ tarea.descripcion }}</p>
+  <h1>Tareas de Aprendizaje</h1>
+
+<pre>{{ site.data.tareas | jsonify }}</pre>
+
+  {% for tarea in site.data.tareas %}
+    <h2>{{ tarea.titulo }}</h2>
+    <p>{{ tarea.descripcion }}</p>
+    
+    <ul>
+      {% for tarea_item in tarea.tareas %}
+        <li>{{ tarea_item }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+
   
-  <h2>Tareas:</h2>
-  <ul>
-    {% for tarea_item in tarea.tareas %}
-      <li>{{ tarea_item }}</li>
-    {% endfor %}
-  </ul>
-  
-  <a href="{{ '/ruta-aprendizajeDS' | url }}">Volver a la ruta de aprendizaje</a>
+
+  <a href="{{ '/ruta-aprendizajeDS' | url }}" class="btn btn-primary">Volver a la ruta de aprendizaje</a>
 </div>

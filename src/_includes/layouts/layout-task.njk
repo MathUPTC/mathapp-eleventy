@@ -26,8 +26,14 @@
     
     <!-- Contenido principal -->
     <div class="container">
-        {{ content | safe }}
+        <div class="contenido-principal">
+            {{ content | safe }}
+        </div>
+        <div class="boton-ruta-aprendizaje mt-4">
+            <a href="{{ '/ruta-aprendizajeDS' | url }}" class="btn btn-primary">Volver a la ruta de aprendizaje</a>
+        </div>
     </div>
+
 
     <!-- Footer -->
     {% include "footer.njk" %}

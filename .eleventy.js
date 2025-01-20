@@ -1,26 +1,31 @@
-const fs = require('fs');
-const path = require('path');
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
     
-    // Passthrough para copiar archivos estáticos
+    // Cargar el archivo JSON de tareas desde la carpeta src/_data
+    const tareasData = require(path.join(__dirname, "src/_data/tareas.json"));
+
+    console.log(tareasData); // Verificar los datos cargados
+
+    // Agregar datos globales para que estén disponibles en todas las plantillas
+    eleventyConfig.addGlobalData("tareas", tareasData);
+
+    eleventyConfig.addFilter("split", function(value, delimiter) {
+        return value.split(delimiter);});
+
+    eleventyConfig.addFilter("jsonify", function(value) {
+        return JSON.stringify(value);
+});
+    // Passthrough para copiar archivos estáticos (CSS y JS)
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/js");
-
-    // Agregar colección de tareas
-    eleventyConfig.addCollection("tareas", function(collectionApi) {
-        const tareasPath = path.join(__dirname, "src", "_data", "tareas.json"); // Cambia esta ruta
-        console.log("Ruta de tareas.json:", tareasPath); // Verifica que sea correcta
-        const tareas = JSON.parse(fs.readFileSync(tareasPath, "utf-8"));
-        return tareas;
-    });
 
     // Configuración de entrada, salida y pathPrefix
     return {
         dir: {
             input: "src",       // Carpeta de entrada
-            output: "docs"      // Carpeta de salida
+            output: "docs"      // Carpeta de salida (donde se generarán los archivos estáticos)
         },
-        pathPrefix: "/mathapp-eleventy/"
+        pathPrefix: "/mathapp-eleventy/" // Para configurar el path si se usa en un entorno de subcarpeta
     };
 };
