@@ -463,3 +463,25 @@ html {
     transform: scale(1.2);
 }
 
+
+
+
+
+
+.full-text {
+    display: none;
+}
+
+.show-more, .show-less {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1em;
+    padding: 0;
+}
+
+.show-more:hover, .show-less:hover {
+    color: darkblue;
+}
