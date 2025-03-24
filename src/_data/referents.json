@@ -1,0 +1,139 @@
+{
+  "📢 Divulgación Científica y Revistas Digitales": [
+    {
+      "nombre": "El Gato y La Caja",
+      "descripcion": "Plataforma de divulgación científica con enfoque en pensamiento crítico.",
+      "link": "https://elgatoylacaja.com/"
+    },
+    {
+      "nombre": "Ciencias del Sur",
+      "descripcion": "Medio de comunicación sobre ciencia, tecnología y sociedad en América Latina.",
+      "link": "https://cienciasdelsur.com/"
+    },
+    {
+      "nombre": "Mapping Ignorance",
+      "descripcion": "Blog que explora avances científicos en distintas disciplinas.",
+      "link": "https://mappingignorance.org/"
+    },
+    {
+      "nombre": "Aeon",
+      "descripcion": "Revista digital con ensayos profundos sobre ciencia y filosofía.",
+      "link": "https://aeon.co/"
+    },
+    {
+      "nombre": "Nautilus",
+      "descripcion": "Revista que combina ciencia, arte y cultura en artículos de divulgación.",
+      "link": "http://nautil.us/"
+    },
+    {
+      "nombre": "Quanta Magazine",
+      "descripcion": "Publicación sobre física, matemáticas y biología teórica.",
+      "link": "https://www.quantamagazine.org/"
+    },
+    {
+      "nombre": "Undark",
+      "descripcion": "Revista de periodismo científico con enfoque crítico.",
+      "link": "https://undark.org/"
+    },
+    {
+      "nombre": "TEC Science",
+      "descripcion": "Portal del Tecnológico de Monterrey sobre ciencia y tecnología.",
+      "link": "https://tecscience.tec.mx/"
+    }
+  ],
+  "👥 Comunidades y Recursos Educativos": [
+    {
+      "nombre": "FreeCodeCamp",
+      "descripcion": "Plataforma gratuita para aprender a programar con proyectos reales.",
+      "link": "https://www.freecodecamp.org/"
+    },
+    {
+      "nombre": "Khan Academy",
+      "descripcion": "Recursos educativos gratuitos en múltiples disciplinas.",
+      "link": "https://www.khanacademy.org/"
+    },
+    {
+      "nombre": "Girls Who Code",
+      "descripcion": "Organización que fomenta la participación de mujeres en tecnología.",
+      "link": "https://girlswhocode.com/"
+    },
+    {
+      "nombre": "The Odin Project",
+      "descripcion": "Currículum abierto para aprender desarrollo web.",
+      "link": "https://www.theodinproject.com/"
+    },
+    {
+      "nombre": "Codeando México",
+      "descripcion": "Comunidad de innovación cívica en México.",
+      "link": "https://codeandomexico.org/"
+    },
+    {
+      "nombre": "Laboratoria",
+      "descripcion": "Programa que capacita a mujeres en tecnología en América Latina.",
+      "link": "https://www.laboratoria.la/"
+    },
+    {
+      "nombre": "Pares Ordenados",
+      "descripcion": "Programa de lectura dirigida que conecta estudiantes de pregrado en matemáticas (o similares*) con estudiantes de posgrado en matemáticas",
+      "link": "https://ninyam.github.io/paresordenados/"
+    },
+    {
+      "nombre": "Wiki Hackerspaces",
+      "descripcion": "Directorio global de espacios de hackers y makers.",
+      "link": "https://wiki.hackerspaces.org/"
+    },
+    {
+      "nombre": "OpenLab Ecuador",
+      "descripcion": "Hackerspace ecuatoriano que promueve la cultura libre.",
+      "link": "https://openlab.ec/"
+    },
+
+    {
+      "nombre": "Gurwi",
+      "descripcion": "Plataforma de aprendizaje visual e interactivo que busca democratizar el acceso al conocimiento esencial para la vida adulta, combinando educación y entretenimiento con gamificación.",
+      "link": "gurwi.com"
+    }
+  ],
+  "🔬 Recursos para Ciencia de Datos e Inteligencia Artificial": [
+    {
+      "nombre": "Fast.ai",
+      "descripcion": "Cursos y herramientas accesibles para IA y aprendizaje profundo.",
+      "link": "https://www.fast.ai/"
+    },
+    {
+      "nombre": "The Alan Turing Institute",
+      "descripcion": "Instituto británico líder en investigación de IA y ciencia de datos.",
+      "link": "https://www.turing.ac.uk/"
+    },
+    {
+      "nombre": "The Turing Way",
+      "descripcion": "Guía abierta sobre ciencia de datos reproducible.",
+      "link": "https://book.the-turing-way.org/"
+    },
+    {
+      "nombre": "QuantEcon",
+      "descripcion": "Recursos educativos en economía computacional y aprendizaje automático.",
+      "link": "https://quantecon.org/"
+    },
+    {
+      "nombre": "MIT OpenCourseWare",
+      "descripcion": "Cursos gratuitos del MIT sobre ciencia, matemáticas y tecnología.",
+      "link": "https://ocw.mit.edu/"
+    },
+    {
+      "nombre": "Papers with Code",
+      "descripcion": "Repositorio de papers científicos con implementaciones en código.",
+      "link": "https://paperswithcode.com/"
+    },
+    {
+      "nombre": "NeuroData",
+      "descripcion": "Herramientas y datasets abiertos para neurociencia computacional.",
+      "link": "https://neurodata.io/"
+    },
+    {
+      "nombre": "3Blue1Brown",
+      "descripcion": "Canal de YouTube que explica conceptos matemáticos con animaciones.",
+      "link": "https://www.3blue1brown.com/"
+    }
+  ]
+}

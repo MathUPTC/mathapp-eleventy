@@ -1,0 +1,26 @@
+---
+layout: layouts/layout-pages.njk
+title: Recursos
+---
+
+<section class="introduccion">
+    <h1>Referentes e Inspiración</h1>
+    <p>En el camino del aprendizaje y la innovación, contar con referentes es clave. Aquí encontrarás una selección de proyectos, comunidades y recursos que han marcado la diferencia en la divulgación científica, la educación y el desarrollo tecnológico. Estos espacios nos inspiran y nos muestran que el conocimiento abierto y colaborativo puede transformar el mundo.</p>
+</section>
+
+
+{% for categoria, proyectos in referents %}
+    <section class="categoria">
+        <h2>{{ categoria }}</h2>
+            <ul class="proyectos-lista">
+                {% for proyecto in proyectos %}
+                    <li class="proyecto">
+                        <a href="{{ proyecto.link }}" target="_blank" class="proyecto-link">
+                        {{ proyecto.nombre }}
+                        </a>
+                        <p class="proyecto-descripcion">{{ proyecto.descripcion }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+    </section>
+{% endfor %}
