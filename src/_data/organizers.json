@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Cristian Fernando León Sierra",
+    "photo": "/images/organizer1.jpg",
+    "link": "https://ds-fernando.github.io/",
+    "email": "cristian.leon01@uptc.edu.co"
+  },
+  {
+    "name": "Gustavo Andrés Martines Suancha",
+    "photo": "/images/organizer2.jpg",
+    "link": "https://www.linkedin.com/in/andres-martinez-suancha-55b668312/",
+    "email": "gustavo.martinez@uptc.edu.co"
+  },
+  {
+    "name": "Andres Vega",
+    "photo": "/images/organizer3.jpg",
+    "link": "https://enlace-a-su-web.com",
+    "email": "organizador3@email.com"
+  }
+]
