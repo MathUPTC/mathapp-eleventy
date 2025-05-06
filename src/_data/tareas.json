@@ -1,90 +1,261 @@
-[
-  {
-    "id": "fundamentos-de-programacion",
-    "titulo": "Fundamentos de Programación",
-    "descripcion": "Aprende los conceptos básicos de programación utilizando Python.",
-    "tareas": [
-      "Instalar Python y configurar el entorno",
-      "Entender variables, tipos de datos y estructuras básicas",
-      "Escribir funciones simples",
-      "Usar condicionales y bucles"
-    ]
-  },
-  {
-    "id": "entornos-virtuales",
-    "titulo": "Entornos Virtuales",
-    "descripcion": "Aprende a crear y gestionar entornos virtuales para proyectos en Python.",
-    "tareas": [
-      "Instalar Anaconda o Virtualenv",
-      "Crear un entorno virtual",
-      "Activar y desactivar el entorno virtual",
-      "Instalar y gestionar paquetes dentro del entorno"
-    ]
-  },
-  {
-    "id": "control-de-versiones",
-    "titulo": "Control de Versiones con Git y GitHub",
-    "descripcion": "Domina el uso de Git y GitHub para gestionar proyectos y colaborar.",
-    "tareas": [
-      "Instalar Git y configurar el entorno",
-      "Crear un repositorio en GitHub",
-      "Aprender los comandos básicos de Git (commit, push, pull)",
-      "Gestionar ramas en Git y fusionarlas"
-    ]
-  },
-  {
-    "id": "fundamentos-matematicos",
-    "titulo": "Fundamentos Matemáticos para Ciencia de Datos",
-    "descripcion": "Refuerza tus conocimientos matemáticos clave para la ciencia de datos.",
-    "tareas": [
-      "Repasar álgebra lineal (vectores, matrices)",
-      "Estudiar probabilidad y estadísticas básicas",
-      "Familiarizarte con la teoría de funciones y series",
-      "Entender los fundamentos de cálculo"
-    ]
-  },
-  {
-    "id": "introduccion-al-analisis-de-datos",
-    "titulo": "Introducción al Análisis de Datos",
-    "descripcion": "Aprende a explorar y analizar datos con herramientas como Pandas.",
-    "tareas": [
-      "Cargar y limpiar conjuntos de datos",
-      "Realizar análisis descriptivo (promedios, medianas, desviaciones)",
-      "Trabajar con series temporales",
-      "Visualizar datos con bibliotecas como Matplotlib"
-    ]
-  },
-  {
-    "id": "sql-y-bases-de-datos",
-    "titulo": "SQL y Bases de Datos",
-    "descripcion": "Aprende a interactuar con bases de datos usando SQL.",
-    "tareas": [
-      "Aprender comandos básicos de SQL (SELECT, INSERT, UPDATE, DELETE)",
-      "Diseñar una base de datos relacional",
-      "Realizar consultas avanzadas (JOINs, subconsultas)",
-      "Optimizar consultas SQL"
-    ]
-  },
-  {
-    "id": "fundamentos-de-machine-learning",
-    "titulo": "Fundamentos de Machine Learning",
-    "descripcion": "Introduce los conceptos clave del aprendizaje automático y sus aplicaciones.",
-    "tareas": [
-      "Estudiar los tipos de aprendizaje (supervisado, no supervisado)",
-      "Implementar un modelo básico de regresión lineal",
-      "Aprender sobre overfitting y underfitting",
-      "Evaluar modelos de Machine Learning"
-    ]
-  },
-  {
-    "id": "aspectos-criticos-y-eticos",
-    "titulo": "Aspectos Críticos y Éticos en Ciencia de Datos",
-    "descripcion": "Comprende las implicaciones éticas y sociales de los modelos de datos.",
-    "tareas": [
-      "Estudiar el sesgo en los datos y en los modelos",
-      "Comprender la privacidad y protección de datos",
-      "Discutir la responsabilidad ética de los científicos de datos",
-      "Evaluar el impacto social de las decisiones basadas en datos"
-    ]
-  }
-]
+{
+  "items": [
+    {
+      "id": "fundamentos-de-programacion",
+      "titulo": "Fundamentos de Programación",
+      "descripcion": "Aprende los conceptos básicos de programación utilizando Python.",
+      "recursos": [
+        {
+          "nombre": " Aprende Python - Curso completo para principiantes",
+          "url": "https://www.youtube.com/watch?v=rfscVS0vtbw"
+        },
+        {
+          "nombre": " Aprende Python - Curso de Python desde Cero ",
+          "url": "https://www.youtube.com/watch?v=DLikpfc64cA"
+        },
+        {
+          "nombre": "El libro de python",
+          "url": "https://ellibrodepython.com/"
+        },
+        {
+          "nombre": "Documentación oficial de python",
+          "url": "https://docs.python.org/3/tutorial/index.html"
+        }
+      ],
+      "tareas": [
+        "Instalar Python y editor de codigo (Recomendación: VisualStudio Code)",
+        "Comprender variables, tipos de datos y estructuras básicas",
+        "Escribir funciones simples y utilizarlas",
+        "Usar condicionales y bucles para controlar el flujo del programa"
+      ],
+      "proyectos": [
+        "Desarrollar una calculadora básica en Python",
+        "Crear un juego de adivinanza de números"
+      ]
+    },
+    {
+      "id": "entornos-virtuales",
+      "titulo": "Entornos Virtuales",
+      "descripcion": "Aprende a crear y gestionar entornos virtuales para proyectos en Python.",
+      "recursos": [
+        {
+          "nombre": "Instalar Gitbash en Windows",
+          "url": "https://www.youtube.com/watch?v=HGg4a9bFNIk&t=116s"
+        },
+        {
+          "nombre": "Comandos Básicos y Linux",
+          "url": "https://www.youtube.com/watch?v=L906Kti3gzE"
+        },
+        {
+          "nombre": "Comandos Básicos",
+          "url": "https://www.youtube.com/watch?v=BZN7Tqeu8eA"
+        },
+        {
+          "nombre": "Que son los entornos virtuales",
+          "url": "https://www.youtube.com/watch?v=FA6d9f_bs_Q"
+        },
+        {
+          "nombre": " Por qué y cómo crear Ambientes Virtuales de Python usando venv y conda ",
+          "url": "https://www.youtube.com/watch?v=pSiPhHBw9yo"
+        }
+      ],
+      "tareas": [
+        "Instalar Gitbash y usar comandos básicos",
+        "Aprender uso básico de Consola de comandos (GitBash)",
+        "Instalar Anaconda o Virtualenv y comprender su uso",
+        "Crear y activar un entorno virtual",
+        "Gestionar paquetes dentro del entorno virtual",
+        "Desactivar y eliminar entornos virtuales cuando sea necesario"
+      ],
+      "proyectos": [
+        "Configurar un entorno virtual para un proyecto de análisis de datos",
+        "Preparar un entorno para el desarrollo web con Flask o Django"
+      ]
+    },
+    {
+      "id": "control-de-versiones",
+      "titulo": "Control de Versiones con Git y GitHub",
+      "descripcion": "Domina el uso de Git y GitHub para gestionar proyectos y colaborar.",
+      "recursos": [
+        {
+          "nombre": "Aprender Git",
+          "url": "https://www.youtube.com/watch?v=VdGzPZ31ts8"
+        },
+        {
+          "nombre": "Curso Completo Git",
+          "url": "https://www.youtube.com/watch?v=3GymExBkKjE"
+        },
+        {
+          "nombre": "Git y Github para principantes",
+          "url": "https://www.youtube.com/watch?v=RGOj5yH7evk"
+        }
+      ],
+      "tareas": [
+        "Instalar Git y configurar el entorno",
+        "Crear un repositorio en GitHub",
+        "Aprender los comandos básicos de Git (commit, push, pull)",
+        "Gestionar ramas en Git y fusionarlas"
+      ],
+
+      "proyectos": [
+        "Crear un repositorio en GitHub y versionar un proyecto personal",
+        "Colaborar en un repositorio de código abierto mediante forks y pull requests"
+      ]
+    },
+    {
+      "id": "fundamentos-matematicos",
+      "titulo": "Fundamentos Matemáticos para Ciencia de Datos",
+      "descripcion": "Refuerza tus conocimientos matemáticos clave para la ciencia de datos.",
+      "recursos": [
+        {
+          "nombre": "Estadística y probablididad básica",
+          "url": "https://es.khanacademy.org/math/probability"
+        },
+        {
+          "nombre": "Precálculo",
+          "url": "https://es.khanacademy.org/math/precalculus"
+        },
+        {
+          "nombre": "Álgebra lineal",
+          "url": "https://es.khanacademy.org/math/linear-algebra"
+        },
+        {
+          "nombre": "Lista de reproducción matemáticas básica",
+          "url": "https://www.youtube.com/watch?v=i7vOAcUo5iA&list=PLWKjhJtqVAbl5SlE6aBHzUVZ1e6q1Wz0v"
+        },
+        {
+          "nombre": "Matemáticas para Machine Learning",
+          "url": "https://www.youtube.com/watch?v=1VSZtNYMntM"
+        }
+      ],
+      "tareas": [
+        "Repasar álgebra lineal (vectores, matrices)",
+        "Estudiar probabilidad y estadísticas básicas",
+        "Familiarizarte con la teoría de funciones y series",
+        "Entender los fundamentos de cálculo"
+      ],
+
+      "proyectos": [
+        "Implementar operaciones de álgebra lineal con NumPy",
+        "Realizar un análisis estadístico básico en Python con datos reales"
+      ]
+    },
+    {
+      "id": "introduccion-al-analisis-de-datos",
+      "titulo": "Introducción al Análisis de Datos",
+      "descripcion": "Aprende a explorar y analizar datos con herramientas como Pandas.",
+      "recursos": [
+        {
+          "nombre": "Análisis de datos con Python",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "nombre": "Python para análisis de datos",
+          "url": "https://www.youtube.com/watch?v=wUSDVGivd-8&t=2s"
+        },
+        {
+          "nombre": "Análisis exploratorio de datos con Pandas",
+          "url": "https://www.youtube.com/watch?v=xi0vhXFPegw"
+        },
+        {
+          "nombre": "Python, Numpy, Pandas",
+          "url": "https://www.youtube.com/watch?v=GPVsHOlRBBI"
+        }
+      ],
+      "tareas": [
+        "Cargar y limpiar conjuntos de datos",
+        "Realizar análisis descriptivo (promedios, medianas, desviaciones)",
+        "Trabajar con series temporales",
+        "Visualizar datos con bibliotecas como Matplotlib"
+      ],
+      "proyectos": [
+        "Cargar, limpiar y analizar un conjunto de datos de Kaggle con Pandas",
+        "Visualizar datos con Matplotlib y Seaborn para encontrar patrones"
+      ]
+    },
+    {
+      "id": "sql-y-bases-de-datos",
+      "titulo": "SQL y Bases de Datos",
+      "descripcion": "Aprende a interactuar con bases de datos usando SQL.",
+      "recursos": [
+        {
+          "nombre": "Curso SQL y bases de datos",
+          "url": "https://www.youtube.com/watch?v=OuJerKzV5T0"
+        },
+        {
+          "nombre": "Curso SQL",
+          "url": "https://www.youtube.com/watch?v=DFg1V-rO6Pg"
+        },
+        {
+          "nombre": "SQL para análisis de datos",
+          "url": "https://www.youtube.com/watch?v=7mz73uXD9DA"
+        }
+      ],
+      "tareas": [
+        "Aprender comandos básicos de SQL (SELECT, INSERT, UPDATE, DELETE)",
+        "Diseñar una base de datos relacional",
+        "Realizar consultas avanzadas (JOINs, subconsultas)",
+        "Optimizar consultas SQL"
+      ],
+      "proyectos": [
+        "Diseñar y crear una base de datos relacional para gestionar ventas",
+        "Construir consultas avanzadas en SQL para extraer información relevante"
+      ]
+    },
+    {
+      "id": "fundamentos-de-machine-learning",
+      "titulo": "Fundamentos de Machine Learning",
+      "descripcion": "Introduce los conceptos clave del aprendizaje automático y sus aplicaciones.",
+      "recursos": [
+        {
+          "nombre": "Que es Machine Learning",
+          "url": "https://www.youtube.com/watch?v=xrQ1YH0PnrM"
+        },
+        {
+          "nombre": "Principales Algoritmos de Machine Learning",
+          "url": "https://www.youtube.com/watch?v=E0Hmnixke2g"
+        },
+        {
+          "nombre": "Curso de Machine Learning",
+          "url": "https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&index=1"
+        }
+      ],
+      "tareas": [
+        "Estudiar los tipos de aprendizaje (supervisado, no supervisado)",
+        "Implementar un modelo básico de regresión lineal",
+        "Aprender sobre overfitting y underfitting",
+        "Evaluar modelos de Machine Learning"
+      ],
+
+      "proyectos": [
+        "Entrenar un modelo de regresión lineal en Scikit-Learn con datos reales",
+        "Implementar un clasificador de imágenes usando k-NN"
+      ]
+    },
+    {
+      "id": "aspectos-criticos-y-eticos",
+      "titulo": "Aspectos Críticos y Éticos en Ciencia de Datos",
+      "descripcion": "Comprende las implicaciones éticas y sociales de los modelos de datos.",
+      "recursos": [
+        {
+          "nombre": "Etica de la Inteligencia Artificial y Robótica",
+          "url": "https://plato.stanford.edu/entries/ethics-ai/"
+        },
+        {
+          "nombre": "Introducción al sesgo en Machine Learning.",
+          "url": "https://www.youtube.com/watch?v=59bMh59JQDo"
+        }
+      ],
+      "tareas": [
+        "Estudiar el sesgo en los datos y en los modelos",
+        "Comprender la privacidad y protección de datos",
+        "Discutir la responsabilidad ética de los científicos de datos",
+        "Evaluar el impacto social de las decisiones basadas en datos"
+      ],
+      "proyectos": [
+        "Analizar el sesgo en un conjunto de datos público y documentar hallazgos",
+        "Aplicar herramientas de fairness en modelos de Machine Learning para evaluar su impacto"
+      ]
+    }
+  ]
+}
