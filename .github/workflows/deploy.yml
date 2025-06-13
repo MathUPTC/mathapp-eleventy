@@ -2,7 +2,7 @@ name: Build and Deploy Eleventy Site to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # o "master", según tu rama principal
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/upload-artifact@v4
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/upload-artifact@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
@@ -26,12 +26,12 @@ jobs:
         run: npm install
 
       - name: Build Eleventy site
-        run: npm run build # asegúrate que "build" esté en tu package.json
+        run: npm run build
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./_site # carpeta generada por Eleventy
+          path: ./_site
 
   deploy:
     needs: build
