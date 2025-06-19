@@ -8,7 +8,7 @@
     "clean": "rm -rf docs",
     "deploy": "",
     "deploy-subdomain": "",
-    "build": "eleventy"
+    "build": "npx eleventy"
   },
   "keywords": [],
   "author": "",
