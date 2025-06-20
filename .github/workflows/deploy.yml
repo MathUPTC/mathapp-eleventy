@@ -1,4 +1,4 @@
-name: Build and Deploy Eleventy Site to GitHub Pages
+name: Deploy Eleventy to GitHub Pages
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20 # Node 18 también funciona, pero 20 es más estable
           cache: "npm"
 
       - name: Install dependencies
@@ -32,13 +32,13 @@ jobs:
       - name: Build Eleventy site
         run: |
           npm run build
-          [ -f docs/.nojekyll ] || touch docs/.nojekyll # Para evitar procesamiento Jekyll
+          [ -f docs/.nojekyll ] || touch docs/.nojekyll  # Asegura que .nojekyll esté en docs/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/
+          path: "docs/" # Ruta personalizada que coincides con tu configuración
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4 # ¡Versión actualizada!
