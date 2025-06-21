@@ -1,4 +1,10 @@
+![Estado](https://img.shields.io/badge/status-active-brightgreen)
 # Ciencia, Tecnología y Sociedad  
+
+**Proyecto educativo que combina**:
+- Enseñanza práctica de programación
+- Análisis crítico de tecnología
+- Desarrollo de soluciones con impacto social
 
 **Stack actual**:  
 - Eleventy (11ty) como generador estático  
