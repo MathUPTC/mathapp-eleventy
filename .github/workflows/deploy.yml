@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Node 18 también funciona, pero 20 es más estable
+          node-version: 20
           cache: "npm"
 
       - name: Install dependencies
@@ -32,13 +32,13 @@ jobs:
       - name: Build Eleventy site
         run: |
           npm run build
-          [ -f docs/.nojekyll ] || touch docs/.nojekyll  # Asegura que .nojekyll esté en docs/
+          [ -f docs/.nojekyll ] || touch docs/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "docs/" # Ruta personalizada que coincides con tu configuración
+          path: "docs/"
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # ¡Versión actualizada!
+        uses: actions/deploy-pages@v4
