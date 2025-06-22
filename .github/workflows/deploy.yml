@@ -3,6 +3,8 @@ name: Deploy Eleventy to GitHub Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -17,28 +19,43 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # 1. Checkout + Setup
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Node 18 también funciona, pero 20 es más estable
+          node-version: 20
           cache: "npm"
 
+      # 2. Seguridad
+      - name: Audit dependencies
+        run: npm audit --audit-level=critical
+
+      # 3. Instalación y Build
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Build Eleventy site
         run: |
           npm run build
-          [ -f docs/.nojekyll ] || touch docs/.nojekyll  # Asegura que .nojekyll esté en docs/
+          [ -f docs/.nojekyll ] || touch docs/.nojekyll
 
+      # 4. Validación de contenido (nuevo)
+      - name: Validate HTML output
+        uses: chabad360/htmlproofer@main
+        with:
+          directory: "./docs"
+          arguments: "--only-4xx --check-html" # Verifica links rotos y HTML válido
+
+      # 5. Despliegue
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "docs/" # Ruta personalizada que coincides con tu configuración
+          path: "docs/"
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # ¡Versión actualizada!
+        if: github.ref == 'refs/heads/main' #Solo deploya en pushes a main
+        uses: actions/deploy-pages@v4
